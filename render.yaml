@@ -7,5 +7,5 @@ services:
     startCommand: gunicorn -w 2 -k gthread -b 0.0.0.0:$PORT api.app:app
     autoDeploy: true
     envVars:
-      - key: PYTHON_VERSION
-        value: 3.11.9
+  - key: PYTHON_VERSION
+    value: 3.10.12
